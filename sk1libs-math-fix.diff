@@ -1,0 +1,19 @@
+--- sk1libs-0.9.1/setup.py	2012-01-08 02:14:56.000000000 +0000
++++ sk1libs-0.9.1.fixed/setup.py	2012-01-08 02:16:11.000000000 +0000
+@@ -78,6 +78,7 @@ if __name__ == "__main__":
+ 			define_macros = [('MAJOR_VERSION', '1'),
+ 						('MINOR_VERSION', '0')],
+ 			sources = [immath_src+'_imagingmath.c'],
++			libraries=['m'],
+ 			extra_compile_args=["-Wall"])
+ 			
+  	imcms_src='src/imaging/libimagingcms/'			
+@@ -120,7 +120,7 @@ if __name__ == "__main__":
+ 					imaging_src+'SunRleDecode.c', imaging_src+'TgaRleDecode.c', imaging_src+'Unpack.c', imaging_src+'UnpackYCC.c', 
+ 					imaging_src+'UnsharpMask.c', imaging_src+'XbmDecode.c', imaging_src+'XbmEncode.c', imaging_src+'ZipDecode.c', 
+ 					imaging_src+'ZipEncode.c', ],
+-			libraries=['jpeg','z'], #,'tiff' TIFF patch will be later
++			libraries=['jpeg','z', 'm'], #,'tiff' TIFF patch will be later
+ 			define_macros=defs,
+ 			extra_compile_args=["-Wall"])
+ 			

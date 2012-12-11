@@ -38,3 +38,10 @@ rm -fr %{buildroot}
 %files
 %{py_platsitedir}/*
 
+
+
+%changelog
+* Sat Mar 10 2012 Thomas Spuhler <tspuhler@mandriva.org> 0.9.1-1mdv2012.0
++ Revision: 783926
+- imported package sk1libs
+

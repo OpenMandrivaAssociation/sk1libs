@@ -1,6 +1,6 @@
 Name:		sk1libs
 Version:	0.9.1
-Release:	%mkrel 1
+Release:	1
 Summary:	Set of Python Non-GUI Extensions for sK1 Project
 License:	GPLv2+ and LGPLv2+
 Group:		Graphics
@@ -8,11 +8,11 @@ URL:		http://sk1project.org/
 Source0:	http://sk1project.org/downloads/%{name}/%{name}-%{version}.tar.gz
 # Fix / kludge for Tcl 8.6 (good old interp->result) - AdamW 2008/12
 Patch0:		sk1libs-math-fix.diff
-BuildRequires:	freetype2-devel
-BuildRequires:	lcms-devel
+BuildRequires:	pkgconfig(freetype2)
+BuildRequires:	pkgconfig(lcms)
 BuildRequires:	jpeg-devel
-BuildRequires:	python-devel
-BuildRequires:	zlib-devel
+BuildRequires:	pkgconfig(python)
+BuildRequires:	pkgconfig(zlib)
 Requires:	python-imaging
 Requires:	python-lcms
 
@@ -37,11 +37,3 @@ rm -fr %{buildroot}
 
 %files
 %{py_platsitedir}/*
-
-
-
-%changelog
-* Sat Mar 10 2012 Thomas Spuhler <tspuhler@mandriva.org> 0.9.1-1mdv2012.0
-+ Revision: 783926
-- imported package sk1libs
-

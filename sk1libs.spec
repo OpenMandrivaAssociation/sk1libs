@@ -1,6 +1,6 @@
 Name:		sk1libs
 Version:	0.9.1
-Release:	2
+Release:	3
 Summary:	Set of Python Non-GUI Extensions for sK1 Project
 License:	GPLv2+ and LGPLv2+
 Group:		Graphics

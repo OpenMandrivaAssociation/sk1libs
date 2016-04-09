@@ -1,6 +1,6 @@
 Name:		sk1libs
 Version:	0.9.1
-Release:	3
+Release:	4
 Summary:	Set of Python Non-GUI Extensions for sK1 Project
 License:	GPLv2+ and LGPLv2+
 Group:		Graphics
@@ -9,11 +9,11 @@ Source0:	http://sk1project.org/downloads/%{name}/%{name}-%{version}.tar.gz
 # Fix / kludge for Tcl 8.6 (good old interp->result) - AdamW 2008/12
 Patch0:		sk1libs-math-fix.diff
 BuildRequires:	pkgconfig(freetype2)
-BuildRequires:	pkgconfig(lcms2)
+BuildRequires:	pkgconfig(lcms)
 BuildRequires:	jpeg-devel
-BuildRequires:	pkgconfig(python)
+BuildRequires:	pkgconfig(python2)
 BuildRequires:	pkgconfig(zlib)
-Requires:	python-imaging
+Requires:	python2-imaging
 
 
 %description

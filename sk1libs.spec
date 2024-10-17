@@ -4,7 +4,7 @@ Release:	4
 Summary:	Set of Python Non-GUI Extensions for sK1 Project
 License:	GPLv2+ and LGPLv2+
 Group:		Graphics
-URL:		http://sk1project.org/
+URL:		https://sk1project.org/
 Source0:	http://sk1project.org/downloads/%{name}/%{name}-%{version}.tar.gz
 # Fix / kludge for Tcl 8.6 (good old interp->result) - AdamW 2008/12
 Patch0:		sk1libs-math-fix.diff
